@@ -1899,7 +1899,6 @@ body.section-open {
 }
 
 
-
 /* ========================================
    CLICK HEART BURSTS
 ======================================== */
@@ -2817,21 +2816,14 @@ body.section-open {
 @media (max-width: 700px) {
 
     .memory-viewer {
-        padding: 70px 20px 30px;
+        padding:
+            80px
+            20px
+            45px;
 
-        /*
-         * IMPORTANT:
-         * Do NOT change the position of the viewer.
-         * It needs to follow the existing fullscreen
-         * content positioning.
-         */
         align-items: flex-start;
 
         overflow-y: auto;
-        overflow-x: hidden;
-
-        width: 100%;
-        box-sizing: border-box;
     }
 
     .memory-viewer-close {
@@ -2842,10 +2834,6 @@ body.section-open {
         height: 42px;
 
         font-size: 26px;
-
-        z-index: 20;
-
-        touch-action: manipulation;
     }
 
     .memory-viewer-card {
@@ -2853,44 +2841,30 @@ body.section-open {
 
         gap: 20px;
 
-        width: min(100%, 420px);
+        width: 100%;
 
         max-height: none;
 
-        margin: 10px auto 0;
+        margin-top: 20px;
     }
 
     .memory-viewer-media {
-        width: 100%;
-
-        max-width: 420px;
+        width: min(90vw, 420px);
 
         max-height: 48vh;
-
-        margin: 0 auto;
     }
 
     .memory-viewer-media img,
     .memory-viewer-media video {
-        width: 100%;
-
-        max-width: 100%;
-
         max-height: 44vh;
-
-        object-fit: contain;
     }
 
     .memory-viewer-note {
-        width: 100%;
-
-        max-width: 320px;
+        width: min(85vw, 320px);
 
         min-height: auto;
 
         padding: 20px;
-
-        margin: 0 auto;
     }
 
     .memory-viewer-title {
@@ -2976,3 +2950,4 @@ html {
     margin-top: 30px !important;
     font-weight: 600;
 }
+
